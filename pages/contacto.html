@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <script src="https://kit.fontawesome.com/617559ce87.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+           <ul class="navegador">
+             <li class="navegador__item">
+                <a class="navegador__enlace"  href="../index.html">Inicio</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/perfil.html">Perfil</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/servicios.html">Servicios</a>
+             </li>
+             <li class="navegador__item">
+               <a class="navegador__enlace" href="../pages/habilidades.html">Habilidades</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/contacto.html">Contacto</a>
+             </li>
+             <li>
+                 <i class=" icon fa-solid fa-bars"></i>
+                </a>
+             </li>
+          </ul>
+       </nav>
+     </header>
+
+
+    <section class="contenido">
+        <div class="titleForm">
+            <h3>Para tener mas infomacion, complete el siguiente formulario</h3>
+        </div>
+     <form class="form">
+        <div>
+            <h3 class="form__consulta">¿Desea realizar una consulta?</h3>
+            <label for="si">Si:</label>
+            <input type="radio" id="si" name="si" value="Si" >
+            <label for="no">No:</label>
+            <input type="radio" id="no" name="no" value="No">
+        </div>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input required type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..">
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input required type="text" placeholder="Ingrese su apellido..">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input required type="text" placeholder="Ingrese su E-mail..">
+        </div>
+        <div>
+            <laber for="estado">Tipo de consulta</laber>
+            <select id="estado" name="estado">
+            <option value="casado/a">Presupuesto</option>
+            <option value="soltero/a">Sitio Web</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="consulta" id="consulta" cols="20" rows="10" placeholder="Ingrese su consulta.."></textarea>
+         </div>
+         <div class="button">
+             <button class="button__limpiar" type="submit">Limpiar</button>
+             <button class="button__enviar">Enviar</button>
+         </div>
+     </form>
+    </section>
+
+    <footer class="final">
+        <p class="final__derechos">Copyright © 2022. Todos Los Derechos Reservados</p>
+        <a class="final__enlaces" target="_blank" href="https://www.facebook.com/">Facebook</a>
+        <a class="final__enlaces" target="_blank" href="https://github.com/github">GitHub</a>
+        <a class="final__enlaces" target="_blank" href="https://www.instagram.com/">Instagram</a>
+        <a class="final__enlaces" target="_blank" href="https://ar.linkedin.com/">Linkedin</a>
+        <a class="final__enlaces" target="_blank" href="https://twitter.com/">Twitter</a>
+    </footer>
+
+</body>
+</html>
