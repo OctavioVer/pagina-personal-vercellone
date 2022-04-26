@@ -18,7 +18,7 @@ ul{
 
 /* Header */
 .navegador{
-    background-color: #01111E;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     height: 50px;
     width: 100%;
         
@@ -68,7 +68,7 @@ ul{
     height: 30px; 
     font-weight: 700;
     border-radius: 5px;
-    background-color: #37C2EC;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 
 
@@ -77,7 +77,7 @@ ul{
     text-align: center;
 
 
-    background-color: #37C2EC;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     margin-top: 10px; 
     width: 150px;
     height: 17px;
@@ -113,7 +113,10 @@ ul{
 /* Inicio de perfil */
 .contenido{
     min-height: 100vh;
-    background-color: #FDECDA;
+    background: #ECE9E6; 
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
+
 }
 
 .historia__titulo{
@@ -391,6 +394,10 @@ ul{
 @media screen and (max-width: 1039px){
     .final__enlaces{
         margin: 40px;
+    }
+
+    .icon{
+        display: none;
     }
 }
 
