@@ -33,17 +33,29 @@ ul{
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
+
+    transition: color 1s;
+}
+
+.navegador__enlace:hover{
+    color: #8EFDA0;
+    text-decoration:underline;
 }
 
 /* fin header */
 
 
 /* Inicio del index */
-.titulo{
+
+.mein{
     background-position: center; 
     background-image: url(../imagenes/software-developer-6521720_1920_edited.jpg);
     min-height: 100vh;
-    
+}
+
+.titulo{
+    min-height: 100vh;
+
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 50px 25px;
@@ -55,9 +67,8 @@ ul{
 
     align-items: center;
     justify-items: center;
-    align-content: center;
     justify-content: center;
-
+    align-content: center;
 }
 
 .titulo__principal{
