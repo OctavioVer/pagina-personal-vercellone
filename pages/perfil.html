@@ -5,65 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link  rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/617559ce87.js" crossorigin="anonymous"></script>
     <title>Perfil</title>
 </head>
+
  <body>
+    <header>
+       <nav .container-xxl>
+          <ul class="navegador">
+             <li class="navegador__item">
+                <a class="navegador__enlace"  href="../index.html">Inicio</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/perfil.html">Perfil</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/servicios.html">Servicios</a>
+             </li>
+             <li class="navegador__item">
+               <a class="navegador__enlace" href="../pages/habilidades.html">Habilidades</a>
+             </li>
+             <li class="navegador__item">
+                <a class="navegador__enlace" href="../pages/contacto.html">Contacto</a>
+             </li>
+             <li>
+                 <i class=" icon fa-solid fa-bars"></i>
+                </a>
+             </li>
+          </ul>
+       </nav>
+    </header>
 
-   <header>
-      <nav>
-         <ul class="navegador">
-           <li class="navegador__item">
-              <a class="navegador__enlace"  href="../index.html">Inicio</a>
-           </li>
-           <li class="navegador__item">
-              <a class="navegador__enlace" href="../pages/perfil.html">Perfil</a>
-           </li>
-           <li class="navegador__item">
-              <a class="navegador__enlace" href="../pages/servicios.html">Servicios</a>
-           </li>
-           <li class="navegador__item">
-             <a class="navegador__enlace" href="../pages/habilidades.html">Habilidades</a>
-           </li>
-           <li class="navegador__item">
-              <a class="navegador__enlace" href="../pages/contacto.html">Contacto</a>
-           </li>
-           <li>
-               <i class=" icon fa-solid fa-bars"></i>
-              </a>
-           </li>
-        </ul>
-     </nav>
-   </header>
-
-  <section class="contenido">
-       <div class="historia">
-         <div class="historia__center">
+    <main class="contenido">
+       <div class="historia__center">
            <img class="historia__imagen" src="../imagenes/personal.jpg" alt="Imagen personal" title="imagen personal">
-         <h3 class="historia__titulo">Mi historia</h3>
+           <h3 class="historia__titulo">Mi historia</h3>
        </div>
 
        <div class="resumen">
-        <p class="resumen_parrafo"> Hola mi nombre es Octavio, estudiante de la carrera Desarrollador Full Stack. Me encuentro en un momento muy importante de mi vida ya que estoy forjando una base muy importante para tener un futuro soñado y poder lograr todas mis metas.</p>
+           <p class="resumen_parrafo"> Hola mi nombre es Octavio, estudiante de la carrera Desarrollador Full Stack. Me encuentro en un momento muy importante de mi vida ya que estoy forjando una base muy importante para tener un futuro soñado y poder lograr todas mis metas.</p>
        </div>
-  
-       <div class="info">
-           <h3 class="info__titulo">informacion personal</h3> 
-             <ul class="info__lista">
-                <li>Nombre</li>
-                <li>E-mail</li>
-                <li>Localidad</li>
-             </ul>
-       </div>
-       <div class="info2">
-        <ul class="info2__lista">
-          <li>Octavio Vercellone</li>
-          <li><a href="mailto:octaviovercellone89@gmail.com">octavio</a></li>
-          <li>Córdoba, Argentina</li>
-        </ul>
-       </div>
-  </section>
+
+       <section class="informacion">
+           <ul class="info"></ul>
+                <div class="info__grid">
+                   <h3 class="info__grid--titulo">informacion personal</h3> 
+                      <div class="info__grid--hijo1">
+                         <li>Nombre</li>
+                      </div>
+                      <div class="info__grid--hijo2">
+                         <li>E-mail</li>
+                        </div>
+                      <div class="info__grid--hijo3">
+                         <li>Localidad</li>
+                        </div>
+                      <div class="info__grid--hijo4">
+                         <li>Octavio Vercellone</li>
+                        </div>
+                      <div class="info__grid--hijo5">
+                         <li><a href="mailto:octaviovercellone89@gmail.com">octaviovercellone89@gmail.com</a></li>
+                        </div>
+                      <div class="info__grid--hijo6">
+                       <li>Córdoba, Argentina</li>
+                      </div>
+                </div>
+           </ul>
+       </section>
+ </main>
   
        <footer class="final">
            <p class="final__derechos">Copyright © 2022. Todos Los Derechos Reservados</p>

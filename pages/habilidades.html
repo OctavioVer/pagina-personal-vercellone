@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link  rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/617559ce87.js" crossorigin="anonymous"></script>
     <title>Habilidades</title>
@@ -12,7 +14,7 @@
 <body>
 
    <header>
-      <nav>
+      <nav .container-xxl>
          <ul class="navegador">
            <li class="navegador__item">
               <a class="navegador__enlace"  href="../index.html">Inicio</a>
@@ -37,44 +39,56 @@
      </nav>
    </header>
    
-    <section class="contenido">
+    <main class="contenido">
        <h2 class="habilidadesTitulo">Habilidades referidas a la programacion</h2>
        <ul class="lista">
-        <div class="grid2">
+        <div class="grid2 .container-xl">
             <div class="grid2__hijo--1">
-               <li><h3>HTML</h3></li>
-               <p class="grid2__parrafo">Bajo Medio Avanzado</p>
+               <li><h5>HTML</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
             </div>
             <div class="grid2__hijo--2">
-               <li><h3>Css</h3></li>
-               <p class="grid2__parrafo">Bajo Medio Avanzado</p>
+               <li><h5>Css</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="width 70%" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
             </div>
             <div class="grid2__hijo--3">
-               <li><h3>JavaScript</h3></li>
-               <p class="grid2__parrafo">Bajo Medio Avanzado</p>
+               <li><h5>JavaScript</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </div>
             <div class="grid2__hijo--4">
-               <li><h3>SQL</h3></li>
-               <p class="grid2__parrafo">Bajo Medio Avanzado</p>
+               <li><h5>SQL</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
            </div>
            <div class="grid2__hijo--5">
-               <li><h3>React Js</h3></li>
-               <p class="grid2__parrafo">Bajo Medio Avanzado</p>
+               <li><h5>React Js</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
            </div>
            <div class="grid2__hijo--6">
-               <li><h3>Api</h3></li>
-               <p>Bajo Medio Avanzado</p>
+               <li><h5>Api</h5></li>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
            </div>
         </div>
        </ul>
 
       <section class="proyecto">
-          <h2>Mis Proyectos</h2>
+          <h3>Mis Proyectos</h3>
           <div class="proyecto__futuro">
-              <h1>Futuros Proyectos</h1>
+              <h4>Futuros Proyectos</h4>
           </div>
       </section>
-    </section>
+    </main>
 
    <footer class="final">
     <p class="final__derechos">Copyright © 2022. Todos Los Derechos Reservados</p>

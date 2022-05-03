@@ -15,12 +15,16 @@ main{
 ul{
     list-style: none;
 }
+li{
+    list-style: none;
+}
 
 /* Header */
 .navegador{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     height: 50px;
     width: 100%;
+    margin-bottom: 0;
         
     display: flex;
     justify-content: center;
@@ -34,7 +38,7 @@ ul{
     font-size: 15px;
     font-weight: 400;
 
-    transition: color 1s;
+    transition: color 0.3s;
 }
 
 .navegador__enlace:hover{
@@ -75,10 +79,10 @@ ul{
     grid-area: ere1;
     text-align: center;
 
-    width: 300px;
-    height: 30px; 
-    font-weight: 700;
-    border-radius: 5px;
+    width: 350px;
+    height: 40px; 
+    font-weight: 500;
+    border-radius: 20px;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 
@@ -91,8 +95,8 @@ ul{
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     margin-top: 10px; 
     width: 150px;
-    height: 17px;
-    border-radius: 5px;
+    height: 24px;
+    border-radius: 20px;
 }
 /* Final del index */
 
@@ -124,10 +128,7 @@ ul{
 /* Inicio de perfil */
 .contenido{
     min-height: 100vh;
-    background: #ECE9E6; 
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
-
+    background: linear-gradient(to bottom, #fde0e0, #f3cda7); 
 }
 
 .historia__titulo{
@@ -159,40 +160,57 @@ ul{
 }
 
 .resumen_parrafo{
-    width: 300px;
+    width: 600px;
     text-align: center;
 }
 
-.info{
-    margin-top: 10px;
+.informacion{
+    margin-top: 90px;
 }
 
-.info__titulo{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 110px;
+.info__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    
+    grid-template-areas:
+    "ede1 ede1 ede1"
+    "ede2 ede3 ede4"
+    "ede5 ede6 ede7"
+    ;
+    gap: 2px;
 }
 
-.info__lista{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    position: relative;
-    top: 140px;
+.info__grid--titulo{
+   grid-area: ede1;
+   text-align: center;
 }
-
-.info2{
-    position: relative;
-    top: 150px;
+.info__grid--hijo1{
+    grid-area: ede2;
     text-align: center;
 }
 
-.info2__lista{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.info__grid--hijo2{
+    grid-area: ede3;
+    text-align: center;
 }
+.info__grid--hijo3{
+    grid-area: ede4;
+    text-align: center;
+}
+.info__grid--hijo4{
+    grid-area: ede5;
+    text-align: center;
+}
+.info__grid--hijo5{
+    grid-area: ede6;
+    text-align: center;
+}
+.info__grid--hijo6{
+    grid-area: ede7;
+    text-align: center;
+}
+
 
 /* Final de perfil */
 
@@ -228,7 +246,7 @@ ul{
     "ele5 ele6"
     ;
 
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .grid__hijo--1{
@@ -277,6 +295,7 @@ ul{
 .habilidadesTitulo{
     text-align: center;
     padding-top: 30px;
+    font-size: 25px;
 }
 
 .lista{
@@ -288,8 +307,8 @@ ul{
     margin-top: 60px;
 
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 100px 100px 100px;
     
     grid-template-areas: 
     "efe1 efe2"
@@ -297,7 +316,7 @@ ul{
     "efe5 efe6"
     ;
 
-    column-gap: 300px;
+    column-gap: 100px;
     row-gap: 3rem;
 }
 .grid2__hijo--1{
@@ -350,37 +369,25 @@ ul{
 /* Final de habilades*/
 
 /* Inicio de contacto */
-.titleForm{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
 
-.form{
-    width: max-content;
-    height: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+.formulario{
+    width: 500px;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: solid;
-    border-color: black;
-    text-align: center;
-    
-    gap: 1rem;
+    justify-content: center;
 }
 
-.form__consulta{
-    padding-top: 15px;
-    padding-bottom: 20px;
+.contenido--2{
+    display: flex;
+    justify-content: center;
 }
 
-.button__limpiar{
-    margin-right: 150px;
-}
+
+
+
+/* Final de contacto */
 
 .whatsapp{
     position: fixed;
@@ -398,17 +405,30 @@ ul{
     display: none;
 }
 
-/* Final de contacto */
 
 /* Media  Querys */
 
-@media screen and (max-width: 1039px){
+@media screen and (max-width: 1023px){
     .final__enlaces{
         margin: 40px;
     }
 
     .icon{
         display: none;
+    }
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "efe1"
+        "efe2"
+        "efe3"
+        "efe4"
+        "efe5"
+        "efe6"
+        ;
     }
 }
 
@@ -464,7 +484,7 @@ ul{
 
     .grid2{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 200px;
         grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "efe1"
@@ -490,6 +510,23 @@ ul{
         display: block;
         font-size: 20px;
         color: white;
+    }
+
+    .info__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        grid-template-areas:
+        "ede1"
+        "ede2"
+        "ede3"
+        "ede4"
+        "ede5"
+        "ede6"
+        "ede7"
+        ;
+        gap: 2px;
     }
 }
 

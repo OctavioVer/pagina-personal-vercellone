@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link  rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/617559ce87.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
@@ -12,7 +14,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav .container-xxl>
            <ul class="navegador">
              <li class="navegador__item">
                 <a class="navegador__enlace"  href="../index.html">Inicio</a>
@@ -38,46 +40,41 @@
      </header>
 
 
-    <section class="contenido">
-        <div class="titleForm">
-            <h3>Para tener mas infomacion, complete el siguiente formulario</h3>
-        </div>
-     <form class="form">
-        <div>
-            <h3 class="form__consulta">¿Desea realizar una consulta?</h3>
-            <label for="si">Si:</label>
-            <input type="radio" id="si" name="si" value="Si" >
-            <label for="no">No:</label>
-            <input type="radio" id="no" name="no" value="No">
-        </div>
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input required type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..">
-        </div>
-        <div>
-            <label for="apellido">Apellido:</label>
-            <input required type="text" placeholder="Ingrese su apellido..">
-        </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input required type="text" placeholder="Ingrese su E-mail..">
-        </div>
-        <div>
-            <laber for="estado">Tipo de consulta</laber>
-            <select id="estado" name="estado">
-            <option value="casado/a">Presupuesto</option>
-            <option value="soltero/a">Sitio Web</option>
+    <main class="contenido contenido--2">
+        <section class="formulario">
+            <form>
+        <div class="input-group ">
+            <span class="input-group-text ">Nombre y Apellido</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="Nombre" required>
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido" required>
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+            <select class="form-select" id="inputGroupSelect01" >
+              <option selected="">Selecione uno...</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Otro</option>
             </select>
-        </div>
-        <div>
-            <textarea name="consulta" id="consulta" cols="20" rows="10" placeholder="Ingrese su consulta.."></textarea>
-         </div>
-         <div class="button">
-             <button class="button__limpiar" type="submit">Limpiar</button>
-             <button class="button__enviar">Enviar</button>
-         </div>
-     </form>
-    </section>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+
+          <input class="form-control" type="text" value="¿Desea realizar una consulta?" aria-label="readonly input example" readonly>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Realice su consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        </section>
+    </main>
 
     <footer class="final">
         <p class="final__derechos">Copyright © 2022. Todos Los Derechos Reservados</p>
