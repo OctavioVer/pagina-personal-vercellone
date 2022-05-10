@@ -1,0 +1,19 @@
+{
+  "name": "programacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass estilo.scss ./css/estilo.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctavioVer/pagina-personal-vercellone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctavioVer/pagina-personal-vercellone/issues"
+  },
+  "homepage": "https://github.com/OctavioVer/pagina-personal-vercellone#readme"
+}

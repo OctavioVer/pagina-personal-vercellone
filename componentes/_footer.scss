@@ -1,0 +1,18 @@
+.final{
+    background: linear-gradient(277deg, rgba(75,108,183,1) 0%, rgba(24,40,72,1) 100%);
+    box-shadow: 0 0.5px 5px rgba(189, 162, 52, 2);
+    text-align: center;
+
+
+&__derechos{
+    color: $colorW;
+    font-weight: 100;
+}
+
+&__enlaces{
+    text-decoration: none;
+    font-weight: 500;
+    color: $colorW;
+    margin: 70px;
+}
+}

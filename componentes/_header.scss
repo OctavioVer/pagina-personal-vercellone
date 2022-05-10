@@ -1,0 +1,27 @@
+.navegador{
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  
+
+&__enlace{
+    color: $colorW;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+
+    transition: color 0.3s;
+}
+
+&__enlace:hover{
+    color: #8EFDA0;
+    text-decoration:underline;
+}
+
+}
