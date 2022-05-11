@@ -4,9 +4,7 @@
 }
 
 .historia__titulo{
-    position: relative;
-    text-align: center;
-    top: 10px;
+    @extend .titleTemple
 }   
 
 .historia__center{

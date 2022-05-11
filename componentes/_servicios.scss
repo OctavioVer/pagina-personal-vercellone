@@ -7,7 +7,7 @@
 
 
 .ser__titulo{
-    font-size: 30px;
+    @extend .titleTemple
 }
 
 .ser__titulo2{
