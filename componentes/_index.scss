@@ -1,0 +1,48 @@
+.mein{
+    background-position: center; 
+    background-image: url(../imagenes/software-developer-6521720_1920_edited.jpg);
+    min-height: 100vh;
+}
+
+.titulo{
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 25px;
+
+    grid-template-areas: 
+    "ere1"
+    "ere2"
+    ;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+
+
+&__principal{
+    grid-area: ere1;
+    text-align: center;
+
+    width: 350px;
+    height: 40px; 
+    font-weight: 500;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+
+&__secundario{
+    grid-area: ere2;
+    text-align: center;
+
+
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    margin-top: 10px; 
+    width: 150px;
+    height: 24px;
+    border-radius: 20px;
+}
+}

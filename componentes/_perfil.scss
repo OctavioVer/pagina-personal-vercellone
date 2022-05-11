@@ -1,0 +1,86 @@
+.contenido{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fde0e0, #f3cda7); 
+}
+
+.historia__titulo{
+    position: relative;
+    text-align: center;
+    top: 10px;
+}   
+
+.historia__center{
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+
+.historia__imagen{
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.resumen{
+    position: relative;
+    top: 50px;
+
+    display: flex;
+    justify-content: center;
+
+
+&_parrafo{
+    width: 600px;
+    text-align: center;
+}
+}
+
+.informacion{
+    margin-top: 90px;
+
+
+.info__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    
+    grid-template-areas:
+    "ede1 ede1 ede1"
+    "ede2 ede3 ede4"
+    "ede5 ede6 ede7"
+    ;
+    gap: 2px;
+}
+
+.info__grid--titulo{
+   grid-area: ede1;
+   text-align: center;
+}
+.info__grid--hijo1{
+    grid-area: ede2;
+    text-align: center;
+}
+
+.info__grid--hijo2{
+    grid-area: ede3;
+    text-align: center;
+}
+.info__grid--hijo3{
+    grid-area: ede4;
+    text-align: center;
+}
+.info__grid--hijo4{
+    grid-area: ede5;
+    text-align: center;
+}
+.info__grid--hijo5{
+    grid-area: ede6;
+    text-align: center;
+}
+.info__grid--hijo6{
+    grid-area: ede7;
+    text-align: center;
+}
+}
