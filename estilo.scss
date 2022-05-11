@@ -28,9 +28,9 @@
     justify-items: center;
     justify-content: center;
     align-content: center;
-}
 
-.titulo__principal{
+
+&__principal{
     grid-area: ere1;
     text-align: center;
 
@@ -42,7 +42,7 @@
 }
 
 
-.titulo__secundario{
+&__secundario{
     grid-area: ere2;
     text-align: center;
 
@@ -52,6 +52,7 @@
     width: 150px;
     height: 24px;
     border-radius: 20px;
+}
 }
 /* Final del index */
 
@@ -87,16 +88,17 @@
 
     display: flex;
     justify-content: center;
-}
 
-.resumen_parrafo{
+
+&_parrafo{
     width: 600px;
     text-align: center;
+}
 }
 
 .informacion{
     margin-top: 90px;
-}
+
 
 .info__grid{
     display: grid;
@@ -140,6 +142,7 @@
     grid-area: ede7;
     text-align: center;
 }
+}
 
 
 /* Final de perfil */
@@ -151,7 +154,7 @@
     align-items: center;
     position: relative;
     top: 80px;
-}
+
 
 .ser__titulo{
     font-size: 30px;
@@ -159,6 +162,7 @@
 
 .ser__titulo2{
     font-weight:lighter;
+}
 }
 
 .grid{
@@ -284,7 +288,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+
 
 .proyecto__futuro{
     margin-top: 3rem;
@@ -294,6 +298,7 @@
     width:100%;
     height: 150px;
     text-align: center;
+}
 }
 
 /* Final de habilades*/
