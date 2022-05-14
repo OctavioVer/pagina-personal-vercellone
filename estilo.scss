@@ -1,13 +1,13 @@
-@import'./componentes/variables';
-@import'./componentes/global';
-@import'./componentes/header';
-@import'./componentes/footer';
-@import'./componentes/_index';
-@import './componentes/perfil';
-@import './componentes/servicios';
-@import './componentes/habilidades';
-@import './componentes/contacto';
-@import './componentes/mediaquerys';
-@import './componentes/iconos';
+@import'./componentesSCSS/variables/variables';
+@import'./componentesSCSS/estilos/global';
+@import'./componentesSCSS/estilos/header';
+@import'./componentesSCSS/estilos/footer';
+@import'./componentesSCSS/pages/index';
+@import './componentesSCSS/pages/perfil';
+@import './componentesSCSS/pages/servicios';
+@import './componentesSCSS/pages/habilidades';
+@import './componentesSCSS/pages/contacto';
+@import './componentesSCSS/estilos/mediaquerys';
+@import './componentesSCSS/estilos/iconos';
 
 
