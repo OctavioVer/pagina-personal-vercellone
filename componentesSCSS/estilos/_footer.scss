@@ -12,4 +12,8 @@
 &__enlaces{
     @include enlacesComun(500)
 }
+
+&__enlaces{
+    margin: 70px;
+}
 }

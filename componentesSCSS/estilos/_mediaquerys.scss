@@ -103,19 +103,18 @@
     }
 
     .info__grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;        
         grid-template-areas:
         "ede1"
         "ede2"
-        "ede3"
-        "ede4"
         "ede5"
-        "ede6"
+        "ede4"
         "ede7"
-        ;
+        "ede3"
+        "ede6"
+        !important;
         gap: 2px;
     }
 }
