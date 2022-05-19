@@ -1,6 +1,5 @@
 .navegador{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    height: 50px;
     width: 100%;
     margin-bottom: 0;
         
@@ -15,8 +14,8 @@
 }
 
 &__enlace:hover{
-    color: #8EFDA0;
-    text-decoration:underline;
+    color: #8EFDA0 !important;
+    text-decoration:underline !important;
 }
 
 }
